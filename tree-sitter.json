@@ -1,0 +1,35 @@
+{
+  "grammars": [
+    {
+      "name": "jj_template",
+      "camelcase": "JjTemplate",
+      "scope": "source.jj_template",
+      "file-types": [
+        ".jj_template"
+      ],
+      "injection-regex": "^jj_template$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Parser for the JJ Templating language",
+    "authors": [
+      {
+        "name": "reo101",
+        "email": "pavel.atanasov2001@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://www.github.com/reo101/tree-sitter-jj_template"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}

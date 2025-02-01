@@ -1,0 +1,27 @@
+===
+nested function calls with string literal arguments
+===
+coalesce(
+  if(current_working_copy, "●"),
+  if(immutable, "⊗", "○"),
+)
+---
+
+(source
+  (function_call
+    (identifier)
+    (argument_list
+      (function_call
+        (identifier)
+        (argument_list
+          (identifier)
+          (literal
+            (string_literal))))
+      (function_call
+        (identifier)
+        (argument_list
+          (identifier)
+          (literal
+            (string_literal))
+          (literal
+            (string_literal)))))))
